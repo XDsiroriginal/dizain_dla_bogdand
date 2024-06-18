@@ -24,6 +24,7 @@ body {
 	position: absolute;
 	padding: 0px;
 	margin-top: 0px;
+	z-index: 99;
 }
 .titi_button {
 	background-image: url("titi.png");
@@ -39,6 +40,9 @@ body {
 	padding: 0px;
 	margin-right: 5px;
 	display: flex;
+ 	animation-duration: 2s;
+ 	animation-iteration-count: 1;
+ 	animation-fill-mode: forwards;
 }
 .error_button {
 	width: 30px;
@@ -100,4 +104,54 @@ body {
 	height: 200px;
 	position: absolute;
 	top: 30%;
+}
+
+@keyframes off_eroor_dispaly {
+  from {
+  	transform: translateX(0px);
+  }
+  to {
+  	transform: translateX(100px);
+  	display: none;
+  }
+}
+
+.titi_pod_box {
+	width: 100px;
+	height: 50%;
+	border: 3px solid black;
+	position: absolute;
+	background-color: white;
+	z-index: 100;
+	display: none;
+	animation-duration: 0.5s;
+ 	animation-iteration-count: 1;
+ 	animation-fill-mode: forwards;
+}
+
+@keyframes titi_pod_box_on {
+  from {
+  	width: 0px;
+  }
+  to {
+  	width: 100px;
+  }
+}
+
+@keyframes titi_pod_box_off {
+  from {
+  	width: 100px;
+  }
+  to {
+  	width: 0px;
+  	display: none;
+  }
+}
+
+.exit_titi {
+	width: 25%;
+	height: 25px;
+	background-color: red;
+	position: absolute;
+	right: 0px;
 }
