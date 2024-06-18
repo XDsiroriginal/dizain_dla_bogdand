@@ -40,16 +40,17 @@ body {
 	padding: 0px;
 	margin-right: 5px;
 	display: flex;
- 	animation-duration: 2s;
- 	animation-iteration-count: 1;
- 	animation-fill-mode: forwards;
 }
 .error_button {
 	width: 30px;
 	height: 100%;
 	border: none;
 	background-image: url("vosklizs.png");
+	background-repeat: no-repeat;
 	padding: 0px;
+	animation-duration: 0.5s;
+ 	animation-iteration-count: 1;
+ 	animation-fill-mode: forwards;
 }
 .error_text {
 	margin: 5px auto;
@@ -154,4 +155,22 @@ body {
 	background-color: red;
 	position: absolute;
 	right: 0px;
+}
+
+@keyframes error_on {
+  from {
+  	width: 30px;
+  }
+  to {
+  	width: 200px;
+  }
+}
+
+@keyframes error_off {
+  from {
+  	width: 200px;
+  }
+  to {
+  	width: 30px;
+  }
 }
