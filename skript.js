@@ -10,6 +10,10 @@ let lampa_element;
 
 let titi_box_element;
 
+let error_box_element;
+let error_text_element;
+let error_bos_on = false;
+
 function error_display () {
 	if (wifi_conect == true) {
 		error_mesage.style["animation-name"] = "off_eroor_dispaly";
@@ -55,4 +59,20 @@ function lampa() {
 function titi_off() {
 	titi_box_element = document.getElementById("titi_pod_box");
 	titi_box_element.style["animation-name"] = "titi_pod_box_off";
+}
+
+function error_box_on(){
+	error_box_element = document.getElementById("error_button");
+	error_text_element = document.getElementById("error_text");
+	if (error_bos_on == false) {
+		error_bos_on = true;
+		error_box_element.style["animation-name"] = "error_on";
+		console.log("on");
+		error_text_element.style["display"] = "block";
+	}
+	else {
+		error_bos_on = false;
+		error_box_element.style["animation-name"] = "error_off";
+		error_text_element.style["display"] = "none";
+	}
 }
