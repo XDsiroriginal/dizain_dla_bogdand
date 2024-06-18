@@ -13,11 +13,6 @@ body {
 
 }
 .top_left_box {
-	margin: 5px;
-	width: 25px;
-	height: 25px;
-}
-.top_left_box {
 	height: 29px;
 	width: 29px;
 	margin: 5px;
@@ -40,6 +35,9 @@ body {
 	padding: 0px;
 	margin-right: 5px;
 	display: flex;
+	animation-duration: 0.5s;
+ 	animation-iteration-count: 1;
+ 	animation-fill-mode: forwards;
 }
 .error_button {
 	width: 30px;
@@ -173,4 +171,10 @@ body {
   to {
   	width: 30px;
   }
+}
+
+.left_button {
+	width: 50px;
+	height: 50px;
+	margin: 5px;
 }
