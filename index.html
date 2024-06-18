@@ -5,12 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="skript.js"></script>
+	<script type="text/javascript" src="skript.js"></script>
 </head>
 <body>
 	<div class="top_box">
 		<div class="top_left_box">
-			<button class="titi_button">
+			<button class="titi_button" onclick="titi_on()">
+				
+			</button>
+		</div>
+		<div class="titi_pod_box" id="titi_pod_box">
+			<button class="exit_titi" onclick="titi_off()">
 				
 			</button>
 		</div>
@@ -29,14 +34,14 @@
 	</div>
 	<div class="center_box">
 		<center>
-			<button class="lampa_button">
+			<button class="lampa_button" id="lampa_id" onclick="lampa()">
 		
 			</button>
 		</center>
 	</div>
 	<div class="bottom_box">
-		<input type="text" name="" class="input_ip" placeholder="pls write your IP">
-		<button class="ip_button">
+		<input type="text" name="" class="input_ip" placeholder="pls write your IP" id="input_id">
+		<button class="ip_button" onclick="set_ip()">
 			
 		</button>
 	</div>
