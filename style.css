@@ -32,16 +32,44 @@ body {
 	border: none;
 }
 .error_box {
-	width: 30px;
+	width: auto;
 	height: 30px;
 	position: relative;
 	float: right;
 	padding: 0px;
 	margin-right: 5px;
+	display: flex;
 }
 .error_button {
-	width: 100%;
+	width: 30px;
 	height: 100%;
 	border: none;
-	
+	background-image: url("vosklizs.png");
+	padding: 0px;
+}
+.error_text {
+	margin: 5px auto;
+	font-size: 20px;
+	font-family: Comfortaa, sans-serif;
+	display: none;
+}
+.bottom_box {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: 0px;
+	display: flex;
+}
+.input_ip {
+	width: 85%;
+	height: 50px;
+	border: 3px solid black;
+	box-sizing: border-box;
+	background-color: rgb(20, 100, 70);
+}
+.ip_button {
+	width: 15%;
+	height: 50px;
+	border: 3px solid black;
+	box-sizing: border-box;
 }
