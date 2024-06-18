@@ -15,6 +15,7 @@ let error_text_element;
 let error_bos_on = false;
 
 function error_display () {
+	error_mesage = document.getElementById("error_mes");
 	if (wifi_conect == true) {
 		error_mesage.style["animation-name"] = "off_eroor_dispaly";
 	}
